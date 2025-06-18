@@ -1,54 +1,79 @@
-# React + TypeScript + Vite
+# 📱 TecnoDoc
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**TecnoDoc** es un sitio web profesional de servicios técnicos para reparación de celulares, computadoras, laptops y redes. Desarrollado con tecnologías modernas y enfocado en brindar una experiencia clara, accesible y directa para los usuarios.
 
-Currently, two official plugins are available:
+![Preview](https://tecnodoc.ignaciofianza.com/images/logo_black.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologías utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React + TypeScript**
+- **Vite** como entorno de desarrollo
+- **TailwindCSS** para estilos rápidos y responsivos
+- **ShadCN UI** como sistema de componentes accesibles y personalizables
+- **Framer Motion** para animaciones suaves
+- **Formspree** para gestión de formularios sin backend
+- **React Icons** (con íconos de [SimpleIcons](https://simpleicons.org))
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 📂 Estructura del proyecto
+
+```
+/public
+  ├── favicon.ico
+  ├── site.webmanifest
+  └── images/
+
+/src
+  ├── components/
+  ├── sections/
+  ├── App.tsx
+  └── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠 Funcionalidades principales
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+- Página de presentación con Hero animado y botones de acción
+- Sección “Sobre TecnoDoc” con descripción y tarjetas informativas
+- Cards de servicios técnicos, con scroll animado y acceso directo a contacto
+- Componente de **reseñas de clientes** en carrusel infinito horizontal
+- Formulario funcional conectado a **Formspree** para recibir mensajes
+- Contacto directo vía WhatsApp, Instagram o email
+- Footer completo con copyright y créditos
+
+---
+
+## 🌐 Sitio online
+
+Podés ver el sitio desplegado en:  
+👉 **[https://tecnodoc.ignaciofianza.com](https://tecnodoc.ignaciofianza.com)**
+
+---
+
+## 📦 Instalación local (opcional)
+
+```bash
+git clone https://github.com/tuusuario/tecnodoc.git
+cd tecnodoc
+pnpm install
+pnpm dev
 ```
+
+> Nota: Este proyecto usa **pnpm** como gestor de paquetes. Si usás npm o yarn, podés adaptarlo fácilmente.
+
+---
+
+## ✨ Créditos
+
+Hecho con ❤️ por [Ignacio Fianza](https://ignaciofianza.com)  
+Diseño, desarrollo y concepto original: TecnoDoc
+
+---
+
+## 📝 Licencia
+
+Este proyecto se encuentra bajo la licencia MIT. Libre para usar, modificar o aprender 😉
